@@ -1,0 +1,293 @@
+{
+  "head": {
+    "logo": "reportJson/external/tcpdf/images/logo_example.png",
+    "info": [
+      "Empresa",
+      "CNPJ",
+      "Contato",
+      "Endereço"
+    ],
+    "page": true
+  },
+  "title": [
+    "Relatório Modelo",
+    "Segunda Linha do Titulo",
+    "Terceira Linha do Titulo"
+  ],
+  "level": {
+    "config": {
+      "align": {
+        "code": "center",
+        "name": "center"
+      },
+      "width": {
+        "code": "150",
+        "name": "350"
+      },
+      "backgroundColor": {
+        "code": "006400",
+        "name": "006400"
+      },
+      "color": {
+        "code": "FFFFFF",
+        "name": "FFFFFF"
+      }
+    },
+    "head": {
+      "code": "Código",
+      "name": "Nome"
+    },
+    "rows": [
+      {
+        "align": {
+          "code": "center",
+          "name": "left"
+        },
+        "backgroundColor": {
+          "code": "23FF23",
+          "name": "23FF23"
+        },
+        "color": {
+          "code": "000000",
+          "name": "000000"
+        }
+      },
+      {
+        "code": 1,
+        "name": "Um"
+      },
+      {
+        "code": 2,
+        "name": "Dois"
+      },
+      {
+        "code": 3,
+        "name": "Três"
+      },
+      {
+        "code": 4,
+        "name": "Quatro"
+      },
+      {
+        "code": 5,
+        "name": "Cinco"
+      },
+      {
+        "code": 6,
+        "name": "Seis"
+      },
+      {
+        "code": 7,
+        "name": "Sete"
+      },
+      {
+        "code": 8,
+        "name": "Oito"
+      },
+      {
+        "code": 9,
+        "name": "Nove"
+      },
+      {
+        "code": 10,
+        "name": "Dez",
+        "level": {
+          "config": {
+            "align": {
+              "code": "center",
+              "name": "center"
+            },
+            "width": {
+              "code": "150",
+              "name": "350"
+            },
+            "backgroundColor": {
+              "code": "b8860b",
+              "name": "b8860b"
+            },
+            "color": {
+              "code": "FFFFFF",
+              "name": "FFFFFF"
+            }
+          },
+          "head": {
+            "code": "Código Nível 2",
+            "name": "Nome  Nível 2"
+          },
+          "rows": [
+            {
+              "align": {
+                "code": "center",
+                "name": "right"
+              },
+              "backgroundColor": {
+                "code": "ffd700",
+                "name": "ffd700"
+              },
+              "color": {
+                "code": "000000",
+                "name": "000000"
+              }
+            },
+            {
+              "code": 1,
+              "name": "Um"
+            },
+            {
+              "code": 2,
+              "name": "Dois"
+            }
+          ],
+          "footer": {
+            "code": 2
+          }
+        }
+      },
+      {
+        "code": 11,
+        "name": "Onze",
+        "level": {
+          "config": {},
+          "head": {},
+          "rows": [
+            {},
+            {
+              "code": 3,
+              "name": "Três"
+            },
+            {
+              "code": 4,
+              "name": "Quatro",
+              "level": {
+                "head": {
+                  "code": "Código Nível 3",
+                  "name": "Nome  Nível 3"
+                },
+                "config": {
+                  "align": {
+                    "code": "center",
+                    "name": "center"
+                  },
+                  "width": {
+                    "code": "150",
+                    "name": "350"
+                  },
+                  "backgroundColor": {
+                    "code": "191970",
+                    "name": "191970"
+                  },
+                  "color": {
+                    "code": "FFFFFF",
+                    "name": "FFFFFF"
+                  }
+                },
+                "rows": [
+                  {
+                    "align": {
+                      "code": "center",
+                      "name": "left"
+                    },
+                    "backgroundColor": {
+                      "code": "ADD8E6",
+                      "name": "ADD8E6"
+                    },
+                    "color": {
+                      "code": "000000",
+                      "name": "000000"
+                    }
+                  },
+                  {
+                    "code": 1,
+                    "name": "Um"
+                  },
+                  {
+                    "code": 2,
+                    "name": "Dois"
+                  }
+                ],
+                "footer": {
+                  "code": 2
+                }
+              }
+            },
+            {
+              "code": 5,
+              "name": "Cinco"
+            },
+            {
+              "code": 6,
+              "name": "Seis"
+            }
+          ],
+          "footer": {
+            "code": 4
+          }
+        }
+      },
+      {
+        "code": 12,
+        "name": "Doze",
+        "level": {
+          "config": {},
+          "head": {},
+          "rows": [
+            {},
+            {
+              "code": 7,
+              "name": "Sete"
+            },
+            {
+              "code": 8,
+              "name": "Oito"
+            },
+            {
+              "code": 9,
+              "name": "Nove",
+              "level": {
+                "head": {},
+                "config": {},
+                "rows": [
+                  {},
+                  {
+                    "code": 3,
+                    "name": "Três"
+                  },
+                  {
+                    "code": 4,
+                    "name": "Quatro"
+                  }
+                ],
+                "footer": {
+                  "code": 2
+                }
+              }
+            },
+            {
+              "code": 10,
+              "name": "Dez"
+            },
+            {
+              "code": 11,
+              "name": "Onze"
+            },
+            {
+              "code": 12,
+              "name": "Doze"
+            }
+          ],
+          "footer": {
+            "code": 6
+          }
+        }
+      }
+    ],
+    "footer": {
+      "code": 12
+    }
+  },
+  "footer": {
+    "date": true,
+    "time": true,
+    "owner": "By Marcelo Schaefer"
+  }
+}

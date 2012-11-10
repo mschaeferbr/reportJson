@@ -1,0 +1,45 @@
+#block {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    opacity: 0.35;
+    text-align: center;
+    background-color: rgb(165, 165, 165);
+}
+
+#config {
+    width: 650px;
+    height: 400px;
+    font-size: 10pt;
+    visibility: hidden;
+    background-color: #ffffff;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: inset 0px 0px 5px #ffffff;
+    position: absolute;
+    z-index: 100;
+}
+
+#headerConfig {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: inset 0px 0px 5px #ffffff;
+    background: #4D4D4D url('img/header_background.png');
+    color: white;
+}
+
+div.openConf{
+    width: 24px;
+    height: 24px;
+    margin: 0;
+}
+
+div.openConf {
+    background: url('img/conf.png');
+    background-size:  contain;
+}

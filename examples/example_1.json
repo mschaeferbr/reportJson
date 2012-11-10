@@ -1,0 +1,215 @@
+{
+  "head": {
+    "logo": "reportJson/external/tcpdf/images/logo_example.png",
+    "info": [
+      "Empresa",
+      "CNPJ",
+      "Contato",
+      "Endereço"
+    ],
+    "page": true
+  },
+  "title": [
+    "Relatório de Aniversariantes",
+    "Entre os Meses 01 a 12"
+  ],
+  "level": {
+    "config": {
+      "align": {
+        "code": "left",
+        "name": "left"
+      },
+      "width": {
+        "code": "100",
+        "name": "300"
+      },
+      "color": {
+        "code": "FF0000",
+        "name": "009900"
+      }
+    },
+    "head": {
+      "code": "Código",
+      "name": "Mês"
+    },
+    "rows": [
+      {
+        "align": {
+          "code": "center",
+          "name": "left"
+        },
+        "color": {
+          "code": "000000",
+          "name": "000000"
+        }
+      },
+      {
+        "code": "1",
+        "name": "Janeiro"
+      },
+      {
+        "code": "2",
+        "name": "Fevereiro"
+      },
+      {
+        "code": "3",
+        "name": "Março"
+      },
+      {
+        "code": "4",
+        "name": "Abril"
+      },
+      {
+        "code": "5",
+        "name": "Maio"
+      },
+      {
+        "code": "6",
+        "name": "Junho"
+      },
+      {
+        "code": "7",
+        "name": "Julho"
+      },
+      {
+        "code": "8",
+        "name": "Agosto"
+      },
+      {
+        "code": "9",
+        "name": "Setembro"
+      },
+      {
+        "code": "10",
+        "name": "Outubro",
+        "level": {
+          "head": {
+            "code": "Código",
+            "name": "Nome",
+            "birthday": "Aniversário",
+            "salary": "Salário",
+            "age": "Idade"
+          },
+          "config": {
+            "align": {
+              "code": "left",
+              "name": "left",
+              "birthday": "center",
+              "salary": "right",
+              "age": "right"
+            },
+            "width": {
+              "code": "100",
+              "name": "200",
+              "birthday": "100",
+              "salary": "100",
+              "age": "100"
+            },
+            "color": {
+              "code": "FF0000",
+              "name": "009900",
+              "birthday": "993300",
+              "salary": "330099",
+              "age": "990099"
+            }
+          },
+          "rows": [
+            {
+              "align": {
+                "code": "center",
+                "name": "left",
+                "birthday": "center",
+                "salary": "right",
+                "age": "center"
+              },
+              "color": {
+                "code": "000000",
+                "name": "000000",
+                "birthday": "000000",
+                "salary": "000000",
+                "age": "000000"
+              }
+            },
+            {
+              "code": "1",
+              "name": "Fulano",
+              "birthday": "05/10/1990",
+              "salary": "1.000,00",
+              "age": "21"
+            },
+            {
+              "code": "2",
+              "name": "Beltrano",
+              "birthday": "05/10/1980",
+              "salary": "1.000,00",
+              "age": "31"
+            }
+          ],
+          "footer": {
+            "salary": "2.000,00",
+            "age": "26"
+          }
+        }
+      },
+      {
+        "code": "11",
+        "name": "Novembro",
+        "level": {
+          "head": {},
+          "config": {},
+          "rows": [
+            {},
+            {
+              "code": "3",
+              "name": "Jose",
+              "birthday": "05/11/1990",
+              "salary": "1.000,00",
+              "age": "21"
+            },
+            {
+              "code": "4",
+              "name": "Pedro",
+              "birthday": "31/11/1991",
+              "salary": "1.070,00",
+              "age": "20"
+            }
+          ],
+          "footer": {
+            "salary": "2.070,00",
+            "age": "20.5"
+          }
+        }
+      },
+      {
+        "code": "12",
+        "name": "Dezembro",
+        "level": {
+          "head": {},
+          "config": {},
+          "rows": [
+            {},
+            {
+              "code": "5",
+              "name": "João",
+              "birthday": "05/12/1989",
+              "salary": "1.000,00",
+              "age": "22"
+            }
+          ],
+          "footer": {
+            "salary": "1.000,00",
+            "age": "22"
+          }
+        }
+      }
+    ],
+    "footer": {
+      "code": "12"
+    }
+  },
+  "footer": {
+    "date": true,
+    "time": true,
+    "owner": "By Marcelo Schaefer"
+  }
+}
