@@ -113,13 +113,13 @@
                 <table>
                     <tr>
                         <td style="width: 183px; text-align: center;">
-                            <button style="cursor: pointer;" onclick="main._reportJson('html');">HTML</button>
+                            <button style="cursor: pointer;" onclick="main._reportJson('.html');">HTML</button>
                         </td>
                         <td style="width: 183px; text-align: center;">
-                            <button style="cursor: pointer;" onclick="main._reportJson('pdf');">PDF</button>
+                            <button style="cursor: pointer;" onclick="main._reportJson('.pdf');">PDF</button>
                         </td>
                         <td style="width: 183px; text-align: center;">
-                            <button style="cursor: pointer;" onclick="main._reportJson('xls');">XLS</button>
+                            <button style="cursor: pointer;" onclick="main._reportJson('.xls');">XLS</button>
                         </td>
                     </tr>
                 </table>

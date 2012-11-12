@@ -42,25 +42,25 @@ class ReportJson {
 
     private function typeReport() {
         switch ($this->type) {
-            case 'html':
+            case '.html':
                 include 'html/Html.php';
                 $objHtml = new Html();
                 $objHtml->obj = $this->obj;
-                $objHtml->file=$this->file.'.'.$this->type;
+                $objHtml->file=$this->file.$this->name.$this->type;
                 $objHtml->generate();
                 break;
-            case 'pdf':
+            case '.pdf':
                 include 'pdf/Pdf.php';
                 $objPdf = new Pdf();
                 $objPdf->obj = $this->obj;
-                $objPdf->file=$this->file.'.'.$this->type;
+                $objPdf->file=$this->file.$this->name.$this->type;
                 $objPdf->generate();
                 break;
-            case 'xls':
+            case '.xls':
                 include 'xls/Xls.php';
                 $objXls = new Xls();
                 $objXls->obj = $this->obj;
-                $objXls->file=$this->file.'.'.$this->type;
+                $objXls->file=$this->file.$this->name.$this->type;
                 $objXls->generate();
                 break;
         }

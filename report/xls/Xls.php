@@ -117,7 +117,7 @@ class Xls {
         $this->buf->getActiveSheet()->getStyle($GLOBALS['c'][2] . ($this->line))->getFont()->setSize(8);
         $this->buf->getActiveSheet()->getStyle($GLOBALS['c'][2] . ($this->line))->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
         $j = 2;
-        while ($j < 8) {
+        while ($j < ($this->totCol + 4)) {
             $this->buf->getActiveSheet()->getStyle($GLOBALS['c'][$j] . ($this->line))->getBorders()->getTop()->setBorderStyle(PHPExcel_Style_Border::BORDER_HAIR);
             $this->buf->getActiveSheet()->getStyle($GLOBALS['c'][$j] . ($this->line))->getBorders()->getBottom()->setBorderStyle(PHPExcel_Style_Border::BORDER_HAIR);
             $j++;

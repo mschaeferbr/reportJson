@@ -6,7 +6,7 @@ $obj = new ReportJson();
 $obj->json = $_POST['json'];
 $obj->type = $_POST['type'];
 $obj->name = 'ReportJson';
-$obj->file = '../tmp/' . $obj->name;
+$obj->file = '../tmp/';
 
 try {
     $obj->generate();

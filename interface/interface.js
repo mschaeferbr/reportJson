@@ -102,11 +102,11 @@ main._loadConf = function() {
 main._reportJson = function (type) {
     main._clear();
     var json = main._getJson();
-    //    var d = new Date();
-    //    var data=d.getFullYear().toString() + (d.getMonth()+1).toString() + d.getDay().toString();
-    //    var hora=d.getHours().toString() + (d.getMinutes()+1).toString() + d.getMilliseconds().toString();
-    //    +data+'_'+hora
-    //    document.getElementById('fileDown').value='reportJson'+data+'_'+hora;
+//        var d = new Date();
+//        var data=d.getFullYear().toString() + (d.getMonth()+1).toString() + d.getDay().toString();
+//        var hora=d.getHours().toString() + (d.getMinutes()+1).toString() + d.getMilliseconds().toString();
+////        +data+'_'+hora
+//        document.getElementById('fileDown').value='reportJson'+data+'_'+hora;
 
     var url = 'report/control.php';
     var params = 'type='+type+'&json='+ encodeURIComponent(json);
@@ -127,7 +127,7 @@ main._reportJsonDisplay = function () {
     if (!document.getElementById('fileType').innerHTML){
         alert('Typo do arquivo não encontrado.');
         return;
-    }else if(document.getElementById('fileType').innerHTML=='xls'){
+    }else if(document.getElementById('fileType').innerHTML=='.xls'){
         main._reportJsonDownload();
         return;
     }
@@ -135,7 +135,7 @@ main._reportJsonDisplay = function () {
     var Y= 950;
     var H= 650;
     window.open(
-        'http://localhost/reportJson/tmp/'+document.getElementById('fileDown').value+'.'+document.getElementById('fileType').innerHTML,
+        'http://localhost/reportJson/tmp/'+document.getElementById('fileDown').value+document.getElementById('fileType').innerHTML,
         'openpdf',
         'toolbar=no,location=no,directories=no,status=no,menubar=no,'+
         'scrollbars=yes,resizable=no,copyhistory=no,width='+Y+',height='+
@@ -158,8 +158,8 @@ main._reportJsonDownload = function () {
         return;
     }
     var url = 'upDownFile/download.php?';
-    var params = 'fileDown=http://localhost/reportJson/tmp/'+document.getElementById('fileDown').value+'.'+document.getElementById('fileType').innerHTML;
-    params +='&fileName='+document.getElementById('fileName').value+'.'+document.getElementById('fileType').innerHTML;
+    var params = 'fileDown=http://localhost/reportJson/tmp/'+document.getElementById('fileDown').value+document.getElementById('fileType').innerHTML;
+    params +='&fileName='+document.getElementById('fileName').value+document.getElementById('fileType').innerHTML;
     document.getElementById('frame').src=url+params;
 }
 
