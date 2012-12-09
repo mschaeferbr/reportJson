@@ -15,15 +15,29 @@ class LevelXls {
     }
 
     public function generate() {
-        $this->validate();
         $this->config();
+        $this->validate();
         $this->listHead();
         $this->listRows();
         $this->listFooter();
     }
 
     private function validate() {
-
+        if (!isset($this->obj->config)) {
+            throw new Exception('Objeto config do nível ' . $this->level . ' não encontrado.');
+        }
+        if (!isset($this->obj->head)) {
+            throw new Exception('Objeto head do nível ' . $this->level . ' não encontrado.');
+        }
+        if (!isset($this->obj->rows)) {
+            throw new Exception('Objeto rows do nível ' . $this->level . ' não encontrado.');
+        }
+        if (!isset($this->obj->rows)) {
+            throw new Exception('Objeto rows do nível ' . $this->level . ' não encontrado.');
+        }
+        if (!isset($this->obj->footer)) {
+            throw new Exception('Objeto footer do nível ' . $this->level . ' não encontrado.');
+        }
     }
 
     private function config() {
@@ -84,9 +98,18 @@ class LevelXls {
 
     private function listRows() {
         $i = 1;
+        $qtdBackgroundColor = count($this->obj->rows[0]->backgroundColor);
         while ($this->obj->rows[$i]) {
             $j = 0;
             $colPos = $this->level + 1;
+
+            //duas cores de fundo faz intercalação entre elas
+            if ($qtdBackgroundColor > 1) {
+                $qtdBC = $i % 2;
+            } else {
+                $qtdBC = 0;
+            }
+
             while ($this->posCol[$j]) {
                 $col = $this->posCol[$j];
                 $this->buf->getActiveSheet()->setCellValueByColumnAndRow($colPos, $this->line, $this->obj->rows[$i]->$col);
@@ -95,8 +118,8 @@ class LevelXls {
                 //align
                 $this->buf->getActiveSheet()->getStyle($GLOBALS['c'][$colPos] . $this->line)->getAlignment()->setHorizontal($this->obj->rows[0]->align->$col);
                 //backgroundColor
-                if ($this->obj->rows[0]->backgroundColor->$col) {
-                    $this->buf->getActiveSheet()->getStyle($GLOBALS['c'][$colPos] . $this->line)->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID)->getStartColor()->setRGB($this->obj->rows[0]->backgroundColor->$col);
+                if ($this->obj->rows[0]->backgroundColor[$qtdBC]->$col) {
+                    $this->buf->getActiveSheet()->getStyle($GLOBALS['c'][$colPos] . $this->line)->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID)->getStartColor()->setRGB($this->obj->rows[0]->backgroundColor[$qtdBC]->$col);
                 }
                 //text color
                 if ($this->obj->rows[0]->color->$col) {

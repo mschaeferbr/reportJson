@@ -9,8 +9,8 @@ class Pdf {
     }
 
     public function generate() {
-        $this->validate();
         $this->config();
+        $this->validate();
         $this->listHead();
         $this->listTitle();
         $this->listLevel();
@@ -19,7 +19,18 @@ class Pdf {
     }
 
     private function validate() {
-
+        if (!isset($this->obj->head)) {
+            throw new Exception('Objeto head não encontrado.');
+        }
+        if (!isset($this->obj->title)) {
+            throw new Exception('Vetor title não encontrado.');
+        }
+        if (!isset($this->obj->level)) {
+            throw new Exception('Objeto level não encontrado.');
+        }
+        if (!isset($this->obj->footer)) {
+            throw new Exception('Objeto footer não encontrado.');
+        }
     }
 
     private function config() {
@@ -53,8 +64,12 @@ class Pdf {
             $head .= ($head ? "\n" : "") . $this->obj->head->info[$i];
             $i++;
         }
-        $this->buf->SetHeaderData(dirname(__FILE__).'/../../../' . $this->obj->head->logo, 25, 12, '', $head);
-//        $this->buf->SetHeaderData('/home/www/' . $this->obj->head->logo, 25, 12, '', $head);
+        if ($this->obj->head->logo) {
+            $this->buf->SetHeaderData(dirname(__FILE__) . '/../../../' . $this->obj->head->logo, 25, 12, '', $head);
+        }
+        if (!$this->obj->head->page) {
+            $this->buf->listPage = false;
+        }
         // add a page
         $this->buf->AddPage();
     }

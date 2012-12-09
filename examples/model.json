@@ -43,10 +43,16 @@
           "code": "center",
           "name": "left"
         },
-        "backgroundColor": {
-          "code": "23FF23",
-          "name": "23FF23"
-        },
+        "backgroundColor": [
+          {
+            "code": "23FF23",
+            "name": "23FF23"
+          },
+          {
+            "code": "1ccc1c",
+            "name": "1ccc1c"
+          }
+        ],
         "color": {
           "code": "000000",
           "name": "000000"
@@ -120,10 +126,12 @@
                 "code": "center",
                 "name": "right"
               },
-              "backgroundColor": {
-                "code": "ffd700",
-                "name": "ffd700"
-              },
+              "backgroundColor": [
+                {
+                  "code": "ffd700",
+                  "name": "ffd700"
+                }
+              ],
               "color": {
                 "code": "000000",
                 "name": "000000"
@@ -187,10 +195,12 @@
                       "code": "center",
                       "name": "left"
                     },
-                    "backgroundColor": {
-                      "code": "ADD8E6",
-                      "name": "ADD8E6"
-                    },
+                    "backgroundColor": [
+                      {
+                        "code": "ADD8E6",
+                        "name": "ADD8E6"
+                      }
+                    ],
                     "color": {
                       "code": "000000",
                       "name": "000000"

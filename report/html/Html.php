@@ -9,8 +9,8 @@ class Html {
     }
 
     public function generate() {
-        $this->validate();
         $this->config();
+        $this->validate();
         $this->listHead();
         $this->listTitle();
         $this->listLevel();
@@ -19,7 +19,18 @@ class Html {
     }
 
     private function validate() {
-
+        if (!isset($this->obj->head)) {
+            throw new Exception('Objeto head não encontrado.');
+        }
+        if (!isset($this->obj->title)) {
+            throw new Exception('Vetor title não encontrado.');
+        }
+        if (!isset($this->obj->level)) {
+            throw new Exception('Objeto level não encontrado.');
+        }
+        if (!isset($this->obj->footer)) {
+            throw new Exception('Objeto footer não encontrado.');
+        }
     }
 
     private function config() {
@@ -32,7 +43,7 @@ class Html {
 
     private function listHead() {
         $this->buf .= '<tr>';
-        $this->buf .= '<td style="width: 50px; text-align: center; vertical-align: middle;"><img src="http://localhost/' . $this->obj->head->logo . '" style="height:50px;width:50px;"/></td>';
+        $this->buf .= '<td style="width: 50px; text-align: center; vertical-align: middle;">' . ($this->obj->head->logo ? '<img src="http://localhost/' . $this->obj->head->logo . '" style="height:50px;width:50px;"/>' : '') . '</td>';
         $this->buf .= '<td style="width: 100%; text-align: center;">';
         $this->buf .= '<table style="width: 100%; text-align: center; font-size: x-small;">';
         $i = 0;
@@ -46,7 +57,7 @@ class Html {
         }
         $this->buf .= '</table>';
         $this->buf .= '</td>';
-        $this->buf .= '<td style="width: 50px; text-align: center; vertical-align: middle; font-size: medium;"><label>1&nbsp;/&nbsp;1</label></td>';
+        $this->buf .= '<td style="width: 50px; text-align: center; vertical-align: middle; font-size: medium;"><label>' . ($this->obj->head->page ? '1&nbsp;/&nbsp;1' : '') . '</label></td>';
         $this->buf .= '</tr>';
         $this->dash();
     }
@@ -98,11 +109,9 @@ class Html {
                     <META NAME="CHANGEDBY" CONTENT="Marcelo Schaefer">
                 </head>
                 <body>
-                    <center>
-                        <table style="font-family: Arial; border: 1px solid;">
-                            ' . $this->buf . '
-                        </table>
-                    </center>
+                    <table style="font-family: Arial; border: 1px solid;">
+                        ' . $this->buf . '
+                    </table>
                 </body>
             </html>
         ';

@@ -13,8 +13,8 @@ class Xls {
     }
 
     public function generate() {
-        $this->validate();
         $this->config();
+        $this->validate();
         $this->listLevel();
         $this->listFooter();
         $this->listHead();
@@ -23,7 +23,18 @@ class Xls {
     }
 
     private function validate() {
-
+        if (!isset($this->obj->head)) {
+            throw new Exception('Objeto head não encontrado.');
+        }
+        if (!isset($this->obj->title)) {
+            throw new Exception('Vetor title não encontrado.');
+        }
+        if (!isset($this->obj->level)) {
+            throw new Exception('Objeto level não encontrado.');
+        }
+        if (!isset($this->obj->footer)) {
+            throw new Exception('Objeto footer não encontrado.');
+        }
     }
 
     private function config() {
@@ -70,19 +81,21 @@ class Xls {
             $this->buf->getActiveSheet()->getStyle($GLOBALS['c'][$j] . ($i + 1))->getBorders()->getBottom()->setBorderStyle(PHPExcel_Style_Border::BORDER_HAIR);
             $j++;
         }
-        $objDrawing = new PHPExcel_Worksheet_Drawing();
-        $objDrawing->setName('Logo');
-        $objDrawing->setDescription('Logo');
-        $objDrawing->setPath(dirname(__FILE__) . '/../../../' . $this->obj->head->logo);
-//        $objDrawing->setPath('/home/www/' . $this->obj->head->logo);
-        $objDrawing->setCoordinates('B2');
-        $objDrawing->setHeight(50);
-        $objDrawing->setWidth(50);
-        $objDrawing->setOffsetY(10);
-        $objDrawing->setOffsetX(5);
-        $objDrawing->setWorksheet($this->buf->getActiveSheet());
-
-        $this->buf->getActiveSheet()->setCellValueByColumnAndRow($this->totCol + 2, 2, '1 / 1');
+        if ($this->obj->head->logo) {
+            $objDrawing = new PHPExcel_Worksheet_Drawing();
+            $objDrawing->setName('Logo');
+            $objDrawing->setDescription('Logo');
+            $objDrawing->setPath(dirname(__FILE__) . '/../../../' . $this->obj->head->logo);
+            $objDrawing->setCoordinates('B2');
+            $objDrawing->setHeight(50);
+            $objDrawing->setWidth(50);
+            $objDrawing->setOffsetY(10);
+            $objDrawing->setOffsetX(5);
+            $objDrawing->setWorksheet($this->buf->getActiveSheet());
+        }
+        if ($this->obj->head->page) {
+            $this->buf->getActiveSheet()->setCellValueByColumnAndRow($this->totCol + 2, 2, '1 / 1');
+        }
     }
 
     private function listTitle() {

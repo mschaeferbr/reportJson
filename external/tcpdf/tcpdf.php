@@ -506,6 +506,12 @@ class TCPDF {
 	 */
 	protected $title = '';
 
+/**
+	 * Document title.
+	 * @protected
+	 */
+	public $listPage = true;
+
 	/**
 	 * Document subject.
 	 * @protected
@@ -4401,6 +4407,7 @@ class TCPDF {
 		//$this->SetY($cur_y);
 		$this->SetY(10);
 		//Print page number no topo
+		if ($this->listPage){
 		if ($this->getRTL()) {
 			$this->SetX($this->original_rMargin);
 			$this->Cell(0, 0, $pagenumtxt, 0, 0, 'L');
@@ -4408,6 +4415,7 @@ class TCPDF {
 			$this->SetX($this->original_lMargin);
 			$this->Cell(0, 0, $this->getAliasRightShift().$pagenumtxt, 0, 0, 'R');
 		}
+}
 		$this->SetY($cur_y);
 		$this->Cell(0, 0, $this->getFooterData(), 'T', 0, 'C');
 	}

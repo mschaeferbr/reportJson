@@ -17,6 +17,10 @@ class ReportJson {
     }
 
     private function read() {
+        //retira slaches se tiver abilitado por padrão no php.ini
+        if(get_magic_quotes_gpc()) {
+            $this->json=stripslashes($this->json);
+        }
         $obj = json_decode($this->json);
         if (!$obj) {
             throw new Exception('Json inválido.');
@@ -43,21 +47,21 @@ class ReportJson {
     private function typeReport() {
         switch ($this->type) {
             case '.html':
-                include 'html/Html.php';
+                include_once 'html/Html.php';
                 $objHtml = new Html();
                 $objHtml->obj = $this->obj;
                 $objHtml->file=$this->file.$this->name.$this->type;
                 $objHtml->generate();
                 break;
             case '.pdf':
-                include 'pdf/Pdf.php';
+                include_once 'pdf/Pdf.php';
                 $objPdf = new Pdf();
                 $objPdf->obj = $this->obj;
                 $objPdf->file=$this->file.$this->name.$this->type;
                 $objPdf->generate();
                 break;
             case '.xls':
-                include 'xls/Xls.php';
+                include_once 'xls/Xls.php';
                 $objXls = new Xls();
                 $objXls->obj = $this->obj;
                 $objXls->file=$this->file.$this->name.$this->type;

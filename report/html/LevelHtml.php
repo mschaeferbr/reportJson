@@ -14,15 +14,29 @@ class LevelHtml {
     }
 
     public function generate() {
-        $this->validate();
         $this->config();
+        $this->validate();
         $this->listHead();
         $this->listRows();
         $this->listFooter();
     }
 
     private function validate() {
-
+        if (!isset($this->obj->config)) {
+            throw new Exception('Objeto config do nível ' . $this->level . ' não encontrado.');
+        }
+        if (!isset($this->obj->head)) {
+            throw new Exception('Objeto head do nível ' . $this->level . ' não encontrado.');
+        }
+        if (!isset($this->obj->rows)) {
+            throw new Exception('Objeto rows do nível ' . $this->level . ' não encontrado.');
+        }
+        if (!isset($this->obj->rows)) {
+            throw new Exception('Objeto rows do nível ' . $this->level . ' não encontrado.');
+        }
+        if (!isset($this->obj->footer)) {
+            throw new Exception('Objeto footer do nível ' . $this->level . ' não encontrado.');
+        }
     }
 
     private function config() {
@@ -52,7 +66,7 @@ class LevelHtml {
         while ($this->posCol[$i]) {
             $col = $this->posCol[$i];
             $width+= (float) $this->obj->config->width->$col;
-            $buf .= '<td border="1" style="border: 1px solid; color: #' . ($this->obj->config->color->$col?$this->obj->config->color->$col:'000000') . '; background-color: #' . ($this->obj->config->backgroundColor->$col?$this->obj->config->backgroundColor->$col:'FFFFFF') . '; width: ' . $this->obj->config->width->$col . 'px; text-align: ' . $this->obj->config->align->$col . '; vertical-align: middle;"><label>' . $this->obj->head->$col . '</label></td>';
+            $buf .= '<td border="1" style="border: 1px solid; color: #' . ($this->obj->config->color->$col ? $this->obj->config->color->$col : '000000') . '; background-color: #' . ($this->obj->config->backgroundColor->$col ? $this->obj->config->backgroundColor->$col : 'FFFFFF') . '; width: ' . $this->obj->config->width->$col . 'px; text-align: ' . $this->obj->config->align->$col . '; vertical-align: middle;"><label>' . $this->obj->head->$col . '</label></td>';
             $i++;
         }
         if ($this->level != 1) {
@@ -68,12 +82,21 @@ class LevelHtml {
 
     private function listRows() {
         $i = 1;
+        $qtdBackgroundColor = count($this->obj->rows[0]->backgroundColor);
         while ($this->obj->rows[$i]) {
             $this->buf .= '<tr style="font-size: small;">';
             $j = 0;
+
+            //duas cores de fundo, faz intercalação entre elas
+            if ($qtdBackgroundColor > 1) {
+                $qtdBC = $i % 2;
+            } else {
+                $qtdBC = 0;
+            }
+
             while ($this->posCol[$j]) {
                 $col = $this->posCol[$j];
-                $this->buf .= '<td border="1" style="border: 1px solid; color: #' . ($this->obj->rows[0]->color->$col?$this->obj->rows[0]->color->$col:'FFFFFF') . '; background-color: #' . ($this->obj->rows[0]->backgroundColor->$col?$this->obj->rows[0]->backgroundColor->$col:'FFFFFF') . '; width: ' . $this->obj->config->width->$col . 'px; text-align: ' . $this->obj->rows[0]->align->$col . '; vertical-align: middle;"><label>' . $this->obj->rows[$i]->$col . '</label></td>';
+                $this->buf .= '<td border="1" style="border: 1px solid; color: #' . ($this->obj->rows[0]->color->$col ? $this->obj->rows[0]->color->$col : '000000') . '; background-color: #' . ($this->obj->rows[0]->backgroundColor[$qtdBC]->$col ? $this->obj->rows[0]->backgroundColor[$qtdBC]->$col : 'FFFFFF') . '; width: ' . $this->obj->config->width->$col . 'px; text-align: ' . $this->obj->rows[0]->align->$col . '; vertical-align: middle;"><label>' . $this->obj->rows[$i]->$col . '</label></td>';
                 $j++;
             }
             $this->buf .= '</tr>';
@@ -84,7 +107,7 @@ class LevelHtml {
                 $this->buf .= '<ol>';
                 $objLevelHtml = new LevelHtml();
                 $objLevelHtml->obj = &$this->obj->rows[$i]->level;
-                $objLevelHtml->buf= &$this->buf;
+                $objLevelHtml->buf = &$this->buf;
                 $objLevelHtml->level = $this->level + 1;
                 $objLevelHtml->generate();
                 $this->buf .= '</ol>';
@@ -101,7 +124,7 @@ class LevelHtml {
             $i = 0;
             while ($this->posCol[$i]) {
                 $col = $this->posCol[$i];
-                $this->buf .= '<td border="1" style="border: 1px solid; color: #' . ($this->obj->config->color->$col?$this->obj->config->color->$col:'000000') . '; background-color: #' . ($this->obj->config->backgroundColor->$col?$this->obj->config->backgroundColor->$col:'FFFFFF') . '; width: ' . $this->obj->config->width->$col . 'px; text-align: ' . $this->obj->config->align->$col . '; vertical-align: middle;"><label>' . $this->obj->footer->$col . '</label></td>';
+                $this->buf .= '<td border="1" style="border: 1px solid; color: #' . ($this->obj->config->color->$col ? $this->obj->config->color->$col : '000000') . '; background-color: #' . ($this->obj->config->backgroundColor->$col ? $this->obj->config->backgroundColor->$col : 'FFFFFF') . '; width: ' . $this->obj->config->width->$col . 'px; text-align: ' . $this->obj->config->align->$col . '; vertical-align: middle;"><label>' . $this->obj->footer->$col . '</label></td>';
                 $i++;
             }
             $this->buf .= '</tr>';
