@@ -1,0 +1,812 @@
+{
+  "head": {
+    "logo": "reportJson/external/tcpdf/images/img.png",
+    "info": [
+      "Empresa",
+      "CNPJ",
+      "Contato",
+      "Endereço"
+    ],
+    "page": true
+  },
+  "title": [
+    "Relatório Modelo",
+    "Segunda Linha do Titulo",
+    "Terceira Linha do Titulo"
+  ],
+  "level": {
+    "config": {
+      "align": {
+        "code": "center",
+        "name": "center"
+      },
+      "width": {
+        "code": 150,
+        "name": 300
+      },
+      "backgroundColor": {
+        "code": "006400",
+        "name": "006400"
+      },
+      "color": {
+        "code": "FFFFFF",
+        "name": "FFFFFF"
+      }
+    },
+    "head": {
+      "code": "Código",
+      "name": "Nome"
+    },
+    "rows": [
+      {
+        "align": {
+          "code": "center",
+          "name": "left"
+        },
+        "backgroundColor": [
+          {
+            "code": "23FF23",
+            "name": "23FF23"
+          }
+        ],
+        "color": {
+          "code": "000000",
+          "name": "000000"
+        }
+      },
+      {
+        "code": 1,
+        "name": "Descrição 1"
+      },
+      {
+        "code": 2,
+        "name": "Descrição 2"
+      },
+      {
+        "code": 3,
+        "name": "Descrição 3"
+      },
+      {
+        "code": 4,
+        "name": "Descrição 4"
+      },
+      {
+        "code": 5,
+        "name": "Descrição 5"
+      },
+      {
+        "code": 6,
+        "name": "Descrição 6"
+      },
+      {
+        "code": 7,
+        "name": "Descrição 7"
+      },
+      {
+        "code": 8,
+        "name": "Descrição 8"
+      },
+      {
+        "code": 9,
+        "name": "Descrição 9"
+      },
+      {
+        "code": 10,
+        "name": "Descrição 10"
+      },
+      {
+        "code": 11,
+        "name": "Descrição 11"
+      },
+      {
+        "code": 12,
+        "name": "Descrição 12"
+      },
+      {
+        "code": 13,
+        "name": "Descrição 13"
+      },
+      {
+        "code": 14,
+        "name": "Descrição 14"
+      },
+      {
+        "code": 15,
+        "name": "Descrição 15"
+      },
+      {
+        "code": 16,
+        "name": "Descrição 16"
+      },
+      {
+        "code": 17,
+        "name": "Descrição 17"
+      },
+      {
+        "code": 18,
+        "name": "Descrição 18"
+      },
+      {
+        "code": 19,
+        "name": "Descrição 19"
+      },
+      {
+        "code": 20,
+        "name": "Descrição 20"
+      },
+      {
+        "code": 21,
+        "name": "Descrição 21"
+      },
+      {
+        "code": 22,
+        "name": "Descrição 22"
+      },
+      {
+        "code": 23,
+        "name": "Descrição 23"
+      },
+      {
+        "code": 24,
+        "name": "Descrição 24"
+      },
+      {
+        "code": 25,
+        "name": "Descrição 25",
+        "level": {
+          "config": {
+            "align": {
+              "code": "center",
+              "name": "center"
+            },
+            "width": {
+              "code": 150,
+              "name": 350
+            },
+            "backgroundColor": {
+              "code": "b8860b",
+              "name": "b8860b"
+            },
+            "color": {
+              "code": "FFFFFF",
+              "name": "FFFFFF"
+            }
+          },
+          "head": {
+            "code": "Código",
+            "name": "Nome"
+          },
+          "rows": [
+            {
+              "align": {
+                "code": "center",
+                "name": "left"
+              },
+              "backgroundColor": [
+                {
+                  "code": "ffd700",
+                  "name": "ffd700"
+                },
+                {
+                  "code": "ffd700",
+                  "name": "ffd700"
+                }
+              ],
+              "color": {
+                "code": "000000",
+                "name": "000000"
+              }
+            },
+            {
+              "code": 1,
+              "name": "Descrição nível dois 1"
+            },
+            {
+              "code": 2,
+              "name": "Descrição nível dois 2"
+            },
+            {
+              "code": 3,
+              "name": "Descrição nível dois 3"
+            },
+            {
+              "code": 4,
+              "name": "Descrição nível dois 4"
+            },
+            {
+              "code": 5,
+              "name": "Descrição nível dois 5"
+            },
+            {
+              "code": 6,
+              "name": "Descrição nível dois 6"
+            },
+            {
+              "code": 7,
+              "name": "Descrição nível dois 7"
+            },
+            {
+              "code": 8,
+              "name": "Descrição nível dois 8"
+            },
+            {
+              "code": 9,
+              "name": "Descrição nível dois 9"
+            }
+          ],
+          "footer": {
+            "code": 9,
+            "name": "Teste"
+          }
+        }
+      },
+      {
+        "code": 26,
+        "name": "Descrição 26"
+      },
+      {
+        "code": 27,
+        "name": "Descrição 27"
+      },
+      {
+        "code": 28,
+        "name": "Descrição 28"
+      },
+      {
+        "code": 29,
+        "name": "Descrição 29"
+      },
+      {
+        "code": 30,
+        "name": "Descrição 30"
+      },
+      {
+        "code": 31,
+        "name": "Descrição 31"
+      },
+      {
+        "code": 32,
+        "name": "Descrição 32"
+      },
+      {
+        "code": 33,
+        "name": "Descrição 33"
+      },
+      {
+        "code": 34,
+        "name": "Descrição 34"
+      },
+      {
+        "code": 35,
+        "name": "Descrição 35"
+      },
+      {
+        "code": 36,
+        "name": "Descrição 36"
+      },
+      {
+        "code": 37,
+        "name": "Descrição 37"
+      },
+      {
+        "code": 38,
+        "name": "Descrição 38"
+      },
+      {
+        "code": 39,
+        "name": "Descrição 39"
+      },
+      {
+        "code": 40,
+        "name": "Descrição 40"
+      },
+      {
+        "code": 41,
+        "name": "Descrição 41"
+      },
+      {
+        "code": 42,
+        "name": "Descrição 42"
+      },
+      {
+        "code": 43,
+        "name": "Descrição 43"
+      },
+      {
+        "code": 44,
+        "name": "Descrição 44"
+      },
+      {
+        "code": 45,
+        "name": "Descrição 45"
+      },
+      {
+        "code": 46,
+        "name": "Descrição 46"
+      },
+      {
+        "code": 47,
+        "name": "Descrição 47"
+      },
+      {
+        "code": 48,
+        "name": "Descrição 48"
+      },
+      {
+        "code": 49,
+        "name": "Descrição 49"
+      },
+      {
+        "code": 50,
+        "name": "Descrição 50",
+        "level": {
+          "config": {
+            "align": {
+              "code": "center",
+              "name": "center"
+            },
+            "width": {
+              "code": 150,
+              "name": 350
+            },
+            "backgroundColor": {
+              "code": "b8860b",
+              "name": "b8860b"
+            },
+            "color": {
+              "code": "FFFFFF",
+              "name": "FFFFFF"
+            }
+          },
+          "head": {
+            "code": "Código",
+            "name": "Nome"
+          },
+          "rows": [
+            {
+              "align": {
+                "code": "center",
+                "name": "left"
+              },
+              "backgroundColor": [
+                {
+                  "code": "ffd700",
+                  "name": "ffd700"
+                },
+                {
+                  "code": "ffd700",
+                  "name": "ffd700"
+                }
+              ],
+              "color": {
+                "code": "000000",
+                "name": "000000"
+              }
+            },
+            {
+              "code": 10,
+              "name": "Descrição nível dois 10"
+            },
+            {
+              "code": 11,
+              "name": "Descrição nível dois 11"
+            },
+            {
+              "code": 12,
+              "name": "Descrição nível dois 12"
+            },
+            {
+              "code": 13,
+              "name": "Descrição nível dois 13"
+            },
+            {
+              "code": 14,
+              "name": "Descrição nível dois 14"
+            },
+            {
+              "code": 15,
+              "name": "Descrição nível dois 15"
+            },
+            {
+              "code": 16,
+              "name": "Descrição nível dois 16"
+            },
+            {
+              "code": 17,
+              "name": "Descrição nível dois 17"
+            },
+            {
+              "code": 18,
+              "name": "Descrição nível dois 18"
+            }
+          ],
+          "footer": {
+            "code": 9,
+            "name": "Teste"
+          }
+        }
+      },
+      {
+        "code": 51,
+        "name": "Descrição 51"
+      },
+      {
+        "code": 52,
+        "name": "Descrição 52"
+      },
+      {
+        "code": 53,
+        "name": "Descrição 53"
+      },
+      {
+        "code": 54,
+        "name": "Descrição 54"
+      },
+      {
+        "code": 55,
+        "name": "Descrição 55"
+      },
+      {
+        "code": 56,
+        "name": "Descrição 56"
+      },
+      {
+        "code": 57,
+        "name": "Descrição 57"
+      },
+      {
+        "code": 58,
+        "name": "Descrição 58"
+      },
+      {
+        "code": 59,
+        "name": "Descrição 59"
+      },
+      {
+        "code": 60,
+        "name": "Descrição 60"
+      },
+      {
+        "code": 61,
+        "name": "Descrição 61"
+      },
+      {
+        "code": 62,
+        "name": "Descrição 62"
+      },
+      {
+        "code": 63,
+        "name": "Descrição 63"
+      },
+      {
+        "code": 64,
+        "name": "Descrição 64"
+      },
+      {
+        "code": 65,
+        "name": "Descrição 65"
+      },
+      {
+        "code": 66,
+        "name": "Descrição 66"
+      },
+      {
+        "code": 67,
+        "name": "Descrição 67"
+      },
+      {
+        "code": 68,
+        "name": "Descrição 68"
+      },
+      {
+        "code": 69,
+        "name": "Descrição 69"
+      },
+      {
+        "code": 70,
+        "name": "Descrição 70"
+      },
+      {
+        "code": 71,
+        "name": "Descrição 71"
+      },
+      {
+        "code": 72,
+        "name": "Descrição 72"
+      },
+      {
+        "code": 73,
+        "name": "Descrição 73"
+      },
+      {
+        "code": 74,
+        "name": "Descrição 74"
+      },
+      {
+        "code": 75,
+        "name": "Descrição 75",
+        "level": {
+          "config": {
+            "align": {
+              "code": "center",
+              "name": "center"
+            },
+            "width": {
+              "code": 150,
+              "name": 350
+            },
+            "backgroundColor": {
+              "code": "b8860b",
+              "name": "b8860b"
+            },
+            "color": {
+              "code": "FFFFFF",
+              "name": "FFFFFF"
+            }
+          },
+          "head": {
+            "code": "Código",
+            "name": "Nome"
+          },
+          "rows": [
+            {
+              "align": {
+                "code": "center",
+                "name": "left"
+              },
+              "backgroundColor": [
+                {
+                  "code": "ffd700",
+                  "name": "ffd700"
+                },
+                {
+                  "code": "ffd700",
+                  "name": "ffd700"
+                }
+              ],
+              "color": {
+                "code": "000000",
+                "name": "000000"
+              }
+            },
+            {
+              "code": 19,
+              "name": "Descrição nível dois 19"
+            },
+            {
+              "code": 20,
+              "name": "Descrição nível dois 20"
+            },
+            {
+              "code": 21,
+              "name": "Descrição nível dois 21"
+            },
+            {
+              "code": 22,
+              "name": "Descrição nível dois 22"
+            },
+            {
+              "code": 23,
+              "name": "Descrição nível dois 23"
+            },
+            {
+              "code": 24,
+              "name": "Descrição nível dois 24"
+            },
+            {
+              "code": 25,
+              "name": "Descrição nível dois 25"
+            },
+            {
+              "code": 26,
+              "name": "Descrição nível dois 26"
+            },
+            {
+              "code": 27,
+              "name": "Descrição nível dois 27"
+            }
+          ],
+          "footer": {
+            "code": 9,
+            "name": "Teste"
+          }
+        }
+      },
+      {
+        "code": 76,
+        "name": "Descrição 76"
+      },
+      {
+        "code": 77,
+        "name": "Descrição 77"
+      },
+      {
+        "code": 78,
+        "name": "Descrição 78"
+      },
+      {
+        "code": 79,
+        "name": "Descrição 79"
+      },
+      {
+        "code": 80,
+        "name": "Descrição 80"
+      },
+      {
+        "code": 81,
+        "name": "Descrição 81"
+      },
+      {
+        "code": 82,
+        "name": "Descrição 82"
+      },
+      {
+        "code": 83,
+        "name": "Descrição 83"
+      },
+      {
+        "code": 84,
+        "name": "Descrição 84"
+      },
+      {
+        "code": 85,
+        "name": "Descrição 85"
+      },
+      {
+        "code": 86,
+        "name": "Descrição 86"
+      },
+      {
+        "code": 87,
+        "name": "Descrição 87"
+      },
+      {
+        "code": 88,
+        "name": "Descrição 88"
+      },
+      {
+        "code": 89,
+        "name": "Descrição 89"
+      },
+      {
+        "code": 90,
+        "name": "Descrição 90"
+      },
+      {
+        "code": 91,
+        "name": "Descrição 91"
+      },
+      {
+        "code": 92,
+        "name": "Descrição 92"
+      },
+      {
+        "code": 93,
+        "name": "Descrição 93"
+      },
+      {
+        "code": 94,
+        "name": "Descrição 94"
+      },
+      {
+        "code": 95,
+        "name": "Descrição 95"
+      },
+      {
+        "code": 96,
+        "name": "Descrição 96"
+      },
+      {
+        "code": 97,
+        "name": "Descrição 97"
+      },
+      {
+        "code": 98,
+        "name": "Descrição 98"
+      },
+      {
+        "code": 99,
+        "name": "Descrição 99"
+      },
+      {
+        "code": 100,
+        "name": "Descrição 100",
+        "level": {
+          "config": {
+            "align": {
+              "code": "center",
+              "name": "center"
+            },
+            "width": {
+              "code": 150,
+              "name": 350
+            },
+            "backgroundColor": {
+              "code": "b8860b",
+              "name": "b8860b"
+            },
+            "color": {
+              "code": "FFFFFF",
+              "name": "FFFFFF"
+            }
+          },
+          "head": {
+            "code": "Código",
+            "name": "Nome"
+          },
+          "rows": [
+            {
+              "align": {
+                "code": "center",
+                "name": "left"
+              },
+              "backgroundColor": [
+                {
+                  "code": "ffd700",
+                  "name": "ffd700"
+                },
+                {
+                  "code": "ffd700",
+                  "name": "ffd700"
+                }
+              ],
+              "color": {
+                "code": "000000",
+                "name": "000000"
+              }
+            },
+            {
+              "code": 28,
+              "name": "Descrição nível dois 28"
+            },
+            {
+              "code": 29,
+              "name": "Descrição nível dois 29"
+            },
+            {
+              "code": 30,
+              "name": "Descrição nível dois 30"
+            },
+            {
+              "code": 31,
+              "name": "Descrição nível dois 31"
+            },
+            {
+              "code": 32,
+              "name": "Descrição nível dois 32"
+            },
+            {
+              "code": 33,
+              "name": "Descrição nível dois 33"
+            },
+            {
+              "code": 34,
+              "name": "Descrição nível dois 34"
+            },
+            {
+              "code": 35,
+              "name": "Descrição nível dois 35"
+            },
+            {
+              "code": 36,
+              "name": "Descrição nível dois 36"
+            }
+          ],
+          "footer": {
+            "code": 9,
+            "name": "Teste"
+          }
+        }
+      }
+    ],
+    "footer": {
+      "code": 100,
+      "name": 5050
+    }
+  },
+  "footer": {
+    "date": true,
+    "time": true,
+    "owner": "By Marcelo Schaefer"
+  }
+}

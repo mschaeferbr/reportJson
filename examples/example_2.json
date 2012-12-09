@@ -1,0 +1,788 @@
+{
+  "head": {
+    "logo": "reportJson/external/tcpdf/images/logo_example.png",
+    "info": [
+      "Empresa",
+      "CNPJ",
+      "Contato",
+      "Endereço"
+    ],
+    "page": true
+  },
+  "title": [
+    "Relatório Modelo",
+    "Segunda Linha do Titulo",
+    "Terceira Linha do Titulo"
+  ],
+  "level": {
+    "config": {
+      "align": {
+        "code": "center",
+        "name": "center",
+        "date": "center",
+        "time": "center"
+      },
+      "width": {
+        "code": 100,
+        "name": 200,
+        "date": 100,
+        "time": 100
+      },
+      "backgroundColor": {
+        "code": "006400",
+        "name": "006400",
+        "date": "006400",
+        "time": "006400"
+      },
+      "color": {
+        "code": "FFFFFF",
+        "name": "FFFFFF",
+        "date": "FFFFFF",
+        "time": "FFFFFF"
+      }
+    },
+    "head": {
+      "code": "Código",
+      "name": "Nome",
+      "date": "Data",
+      "time": "Hora"
+    },
+    "rows": [
+      {
+        "align": {
+          "code": "center",
+          "name": "left",
+          "date": "center",
+          "time": "right"
+        },
+        "backgroundColor": [
+          {
+            "code": "23FF23",
+            "name": "23FF23",
+            "date": "23FF23",
+            "time": "23FF23"
+          },
+          {
+            "code": "1ccc1c",
+            "name": "1ccc1c",
+            "date": "1ccc1c",
+            "time": "1ccc1c"
+          }
+        ],
+        "color": {
+          "code": "000000",
+          "name": "000000",
+          "date": "000000",
+          "time": "000000"
+        }
+      },
+      {
+        "code": 1,
+        "name": "Descrição 1",
+        "date": "10/12/2012",
+        "time": "16:08:00"
+      },
+      {
+        "code": 2,
+        "name": "Descrição 2",
+        "date": "11/12/2012",
+        "time": "17:09:01"
+      },
+      {
+        "code": 3,
+        "name": "Descrição 3",
+        "date": "12/12/2012",
+        "time": "18:10:02"
+      },
+      {
+        "code": 4,
+        "name": "Descrição 4",
+        "date": "13/12/2012",
+        "time": "19:11:03"
+      },
+      {
+        "code": 5,
+        "name": "Descrição 5",
+        "date": "14/12/2012",
+        "time": "20:12:04"
+      },
+      {
+        "code": 6,
+        "name": "Descrição 6",
+        "date": "15/12/2012",
+        "time": "21:13:05"
+      },
+      {
+        "code": 7,
+        "name": "Descrição 7",
+        "date": "16/12/2012",
+        "time": "22:14:06"
+      },
+      {
+        "code": 8,
+        "name": "Descrição 8",
+        "date": "17/12/2012",
+        "time": "23:15:07"
+      },
+      {
+        "code": 9,
+        "name": "Descrição 9",
+        "date": "18/12/2012",
+        "time": "00:16:08"
+      },
+      {
+        "code": 10,
+        "name": "Descrição 10",
+        "date": "19/12/2012",
+        "time": "01:17:09"
+      },
+      {
+        "code": 11,
+        "name": "Descrição 11",
+        "date": "20/12/2012",
+        "time": "02:18:10"
+      },
+      {
+        "code": 12,
+        "name": "Descrição 12",
+        "date": "21/12/2012",
+        "time": "03:19:11"
+      },
+      {
+        "code": 13,
+        "name": "Descrição 13",
+        "date": "22/12/2012",
+        "time": "04:20:12"
+      },
+      {
+        "code": 14,
+        "name": "Descrição 14",
+        "date": "23/12/2012",
+        "time": "05:21:13"
+      },
+      {
+        "code": 15,
+        "name": "Descrição 15",
+        "date": "24/12/2012",
+        "time": "06:22:14"
+      },
+      {
+        "code": 16,
+        "name": "Descrição 16",
+        "date": "25/12/2012",
+        "time": "07:23:15"
+      },
+      {
+        "code": 17,
+        "name": "Descrição 17",
+        "date": "26/12/2012",
+        "time": "08:24:16"
+      },
+      {
+        "code": 18,
+        "name": "Descrição 18",
+        "date": "27/12/2012",
+        "time": "09:25:17"
+      },
+      {
+        "code": 19,
+        "name": "Descrição 19",
+        "date": "28/12/2012",
+        "time": "10:26:18"
+      },
+      {
+        "code": 20,
+        "name": "Descrição 20",
+        "date": "29/12/2012",
+        "time": "11:27:19"
+      },
+      {
+        "code": 21,
+        "name": "Descrição 21",
+        "date": "30/12/2012",
+        "time": "12:28:20"
+      },
+      {
+        "code": 22,
+        "name": "Descrição 22",
+        "date": "31/12/2012",
+        "time": "13:29:21"
+      },
+      {
+        "code": 23,
+        "name": "Descrição 23",
+        "date": "01/01/2013",
+        "time": "14:30:22"
+      },
+      {
+        "code": 24,
+        "name": "Descrição 24",
+        "date": "02/01/2013",
+        "time": "15:31:23"
+      },
+      {
+        "code": 25,
+        "name": "Descrição 25",
+        "date": "03/01/2013",
+        "time": "16:32:24"
+      },
+      {
+        "code": 26,
+        "name": "Descrição 26",
+        "date": "04/01/2013",
+        "time": "17:33:25"
+      },
+      {
+        "code": 27,
+        "name": "Descrição 27",
+        "date": "05/01/2013",
+        "time": "18:34:26"
+      },
+      {
+        "code": 28,
+        "name": "Descrição 28",
+        "date": "06/01/2013",
+        "time": "19:35:27"
+      },
+      {
+        "code": 29,
+        "name": "Descrição 29",
+        "date": "07/01/2013",
+        "time": "20:36:28"
+      },
+      {
+        "code": 30,
+        "name": "Descrição 30",
+        "date": "08/01/2013",
+        "time": "21:37:29"
+      },
+      {
+        "code": 31,
+        "name": "Descrição 31",
+        "date": "09/01/2013",
+        "time": "22:38:30"
+      },
+      {
+        "code": 32,
+        "name": "Descrição 32",
+        "date": "10/01/2013",
+        "time": "23:39:31"
+      },
+      {
+        "code": 33,
+        "name": "Descrição 33",
+        "date": "11/01/2013",
+        "time": "00:40:32"
+      },
+      {
+        "code": 34,
+        "name": "Descrição 34",
+        "date": "12/01/2013",
+        "time": "01:41:33"
+      },
+      {
+        "code": 35,
+        "name": "Descrição 35",
+        "date": "13/01/2013",
+        "time": "02:42:34"
+      },
+      {
+        "code": 36,
+        "name": "Descrição 36",
+        "date": "14/01/2013",
+        "time": "03:43:35"
+      },
+      {
+        "code": 37,
+        "name": "Descrição 37",
+        "date": "15/01/2013",
+        "time": "04:44:36"
+      },
+      {
+        "code": 38,
+        "name": "Descrição 38",
+        "date": "16/01/2013",
+        "time": "05:45:37"
+      },
+      {
+        "code": 39,
+        "name": "Descrição 39",
+        "date": "17/01/2013",
+        "time": "06:46:38"
+      },
+      {
+        "code": 40,
+        "name": "Descrição 40",
+        "date": "18/01/2013",
+        "time": "07:47:39"
+      },
+      {
+        "code": 41,
+        "name": "Descrição 41",
+        "date": "19/01/2013",
+        "time": "08:48:40"
+      },
+      {
+        "code": 42,
+        "name": "Descrição 42",
+        "date": "20/01/2013",
+        "time": "09:49:41"
+      },
+      {
+        "code": 43,
+        "name": "Descrição 43",
+        "date": "21/01/2013",
+        "time": "10:50:42"
+      },
+      {
+        "code": 44,
+        "name": "Descrição 44",
+        "date": "22/01/2013",
+        "time": "11:51:43"
+      },
+      {
+        "code": 45,
+        "name": "Descrição 45",
+        "date": "23/01/2013",
+        "time": "12:52:44"
+      },
+      {
+        "code": 46,
+        "name": "Descrição 46",
+        "date": "24/01/2013",
+        "time": "13:53:45"
+      },
+      {
+        "code": 47,
+        "name": "Descrição 47",
+        "date": "25/01/2013",
+        "time": "14:54:46"
+      },
+      {
+        "code": 48,
+        "name": "Descrição 48",
+        "date": "26/01/2013",
+        "time": "15:55:47"
+      },
+      {
+        "code": 49,
+        "name": "Descrição 49",
+        "date": "27/01/2013",
+        "time": "16:56:48"
+      },
+      {
+        "code": 50,
+        "name": "Descrição 50",
+        "date": "28/01/2013",
+        "time": "17:57:49",
+        "level": {
+          "config": {
+            "align": {
+              "code": "center",
+              "name": "center"
+            },
+            "width": {
+              "code": 150,
+              "name": 350
+            },
+            "backgroundColor": {
+              "code": "b8860b",
+              "name": "b8860b"
+            },
+            "color": {
+              "code": "FFFFFF",
+              "name": "FFFFFF"
+            }
+          },
+          "head": {
+            "code": "Código",
+            "name": "Nome"
+          },
+          "rows": [
+            {
+              "align": {
+                "code": "center",
+                "name": "left"
+              },
+              "backgroundColor": [
+                {
+                  "code": "ffd700",
+                  "name": "ffd700"
+                }
+              ],
+              "color": {
+                "code": "000000",
+                "name": "000000"
+              },
+              "code": 1,
+              "name": "Descrição nível dois 1"
+            },
+            {
+              "align": {
+                "code": "center",
+                "name": "left"
+              },
+              "backgroundColor": [
+                {
+                  "code": "ffd700",
+                  "name": "ffd700"
+                }
+              ],
+              "color": {
+                "code": "000000",
+                "name": "000000"
+              },
+              "code": 1,
+              "name": "Descrição nível dois 1"
+            },
+            {
+              "code": 2,
+              "name": "Descrição nível dois 2"
+            },
+            {
+              "code": 3,
+              "name": "Descrição nível dois 3"
+            },
+            {
+              "code": 4,
+              "name": "Descrição nível dois 4"
+            },
+            {
+              "code": 5,
+              "name": "Descrição nível dois 5"
+            },
+            {
+              "code": 6,
+              "name": "Descrição nível dois 6"
+            },
+            {
+              "code": 7,
+              "name": "Descrição nível dois 7"
+            },
+            {
+              "code": 8,
+              "name": "Descrição nível dois 8"
+            },
+            {
+              "code": 9,
+              "name": "Descrição nível dois 9"
+            }
+          ],
+          "footer": {
+            "code": 9,
+            "name": "Teste"
+          }
+        }
+      },
+      {
+        "code": 51,
+        "name": "Descrição 51",
+        "date": "29/01/2013",
+        "time": "18:58:50"
+      },
+      {
+        "code": 52,
+        "name": "Descrição 52",
+        "date": "30/01/2013",
+        "time": "19:59:51"
+      },
+      {
+        "code": 53,
+        "name": "Descrição 53",
+        "date": "31/01/2013",
+        "time": "21:00:52"
+      },
+      {
+        "code": 54,
+        "name": "Descrição 54",
+        "date": "01/02/2013",
+        "time": "22:01:53"
+      },
+      {
+        "code": 55,
+        "name": "Descrição 55",
+        "date": "02/02/2013",
+        "time": "23:02:54"
+      },
+      {
+        "code": 56,
+        "name": "Descrição 56",
+        "date": "03/02/2013",
+        "time": "00:03:55"
+      },
+      {
+        "code": 57,
+        "name": "Descrição 57",
+        "date": "04/02/2013",
+        "time": "01:04:56"
+      },
+      {
+        "code": 58,
+        "name": "Descrição 58",
+        "date": "05/02/2013",
+        "time": "02:05:57"
+      },
+      {
+        "code": 59,
+        "name": "Descrição 59",
+        "date": "06/02/2013",
+        "time": "03:06:58"
+      },
+      {
+        "code": 60,
+        "name": "Descrição 60",
+        "date": "07/02/2013",
+        "time": "04:07:59"
+      },
+      {
+        "code": 61,
+        "name": "Descrição 61",
+        "date": "08/02/2013",
+        "time": "05:09:00"
+      },
+      {
+        "code": 62,
+        "name": "Descrição 62",
+        "date": "09/02/2013",
+        "time": "06:10:01"
+      },
+      {
+        "code": 63,
+        "name": "Descrição 63",
+        "date": "10/02/2013",
+        "time": "07:11:02"
+      },
+      {
+        "code": 64,
+        "name": "Descrição 64",
+        "date": "11/02/2013",
+        "time": "08:12:03"
+      },
+      {
+        "code": 65,
+        "name": "Descrição 65",
+        "date": "12/02/2013",
+        "time": "09:13:04"
+      },
+      {
+        "code": 66,
+        "name": "Descrição 66",
+        "date": "13/02/2013",
+        "time": "10:14:05"
+      },
+      {
+        "code": 67,
+        "name": "Descrição 67",
+        "date": "14/02/2013",
+        "time": "11:15:06"
+      },
+      {
+        "code": 68,
+        "name": "Descrição 68",
+        "date": "15/02/2013",
+        "time": "12:16:07"
+      },
+      {
+        "code": 69,
+        "name": "Descrição 69",
+        "date": "16/02/2013",
+        "time": "13:17:08"
+      },
+      {
+        "code": 70,
+        "name": "Descrição 70",
+        "date": "17/02/2013",
+        "time": "14:18:09"
+      },
+      {
+        "code": 71,
+        "name": "Descrição 71",
+        "date": "18/02/2013",
+        "time": "15:19:10"
+      },
+      {
+        "code": 72,
+        "name": "Descrição 72",
+        "date": "19/02/2013",
+        "time": "16:20:11"
+      },
+      {
+        "code": 73,
+        "name": "Descrição 73",
+        "date": "20/02/2013",
+        "time": "17:21:12"
+      },
+      {
+        "code": 74,
+        "name": "Descrição 74",
+        "date": "21/02/2013",
+        "time": "18:22:13"
+      },
+      {
+        "code": 75,
+        "name": "Descrição 75",
+        "date": "22/02/2013",
+        "time": "19:23:14"
+      },
+      {
+        "code": 76,
+        "name": "Descrição 76",
+        "date": "23/02/2013",
+        "time": "20:24:15"
+      },
+      {
+        "code": 77,
+        "name": "Descrição 77",
+        "date": "24/02/2013",
+        "time": "21:25:16"
+      },
+      {
+        "code": 78,
+        "name": "Descrição 78",
+        "date": "25/02/2013",
+        "time": "22:26:17"
+      },
+      {
+        "code": 79,
+        "name": "Descrição 79",
+        "date": "26/02/2013",
+        "time": "23:27:18"
+      },
+      {
+        "code": 80,
+        "name": "Descrição 80",
+        "date": "27/02/2013",
+        "time": "00:28:19"
+      },
+      {
+        "code": 81,
+        "name": "Descrição 81",
+        "date": "28/02/2013",
+        "time": "01:29:20"
+      },
+      {
+        "code": 82,
+        "name": "Descrição 82",
+        "date": "01/03/2013",
+        "time": "02:30:21"
+      },
+      {
+        "code": 83,
+        "name": "Descrição 83",
+        "date": "02/03/2013",
+        "time": "03:31:22"
+      },
+      {
+        "code": 84,
+        "name": "Descrição 84",
+        "date": "03/03/2013",
+        "time": "04:32:23"
+      },
+      {
+        "code": 85,
+        "name": "Descrição 85",
+        "date": "04/03/2013",
+        "time": "05:33:24"
+      },
+      {
+        "code": 86,
+        "name": "Descrição 86",
+        "date": "05/03/2013",
+        "time": "06:34:25"
+      },
+      {
+        "code": 87,
+        "name": "Descrição 87",
+        "date": "06/03/2013",
+        "time": "07:35:26"
+      },
+      {
+        "code": 88,
+        "name": "Descrição 88",
+        "date": "07/03/2013",
+        "time": "08:36:27"
+      },
+      {
+        "code": 89,
+        "name": "Descrição 89",
+        "date": "08/03/2013",
+        "time": "09:37:28"
+      },
+      {
+        "code": 90,
+        "name": "Descrição 90",
+        "date": "09/03/2013",
+        "time": "10:38:29"
+      },
+      {
+        "code": 91,
+        "name": "Descrição 91",
+        "date": "10/03/2013",
+        "time": "11:39:30"
+      },
+      {
+        "code": 92,
+        "name": "Descrição 92",
+        "date": "11/03/2013",
+        "time": "12:40:31"
+      },
+      {
+        "code": 93,
+        "name": "Descrição 93",
+        "date": "12/03/2013",
+        "time": "13:41:32"
+      },
+      {
+        "code": 94,
+        "name": "Descrição 94",
+        "date": "13/03/2013",
+        "time": "14:42:33"
+      },
+      {
+        "code": 95,
+        "name": "Descrição 95",
+        "date": "14/03/2013",
+        "time": "15:43:34"
+      },
+      {
+        "code": 96,
+        "name": "Descrição 96",
+        "date": "15/03/2013",
+        "time": "16:44:35"
+      },
+      {
+        "code": 97,
+        "name": "Descrição 97",
+        "date": "16/03/2013",
+        "time": "17:45:36"
+      },
+      {
+        "code": 98,
+        "name": "Descrição 98",
+        "date": "17/03/2013",
+        "time": "18:46:37"
+      },
+      {
+        "code": 99,
+        "name": "Descrição 99",
+        "date": "18/03/2013",
+        "time": "19:47:38"
+      },
+      {
+        "code": 100,
+        "name": "Descrição 100",
+        "date": "19/03/2013",
+        "time": "20:48:39"
+      }
+    ],
+    "footer": {
+      "code": 100,
+      "name": 5050
+    }
+  },
+  "footer": {
+    "date": true,
+    "time": true,
+    "owner": "By Marcelo Schaefer"
+  }
+}
